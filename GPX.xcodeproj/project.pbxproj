@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324A62491BC1703200F3A050 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324A62481BC1703200F3A050 /* main.cpp */; };
+		324A62501BC1705400F3A050 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A624F1BC1705400F3A050 /* OpenGL.framework */; };
+		324A62521BC1707700F3A050 /* libGLEW.1.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */; };
+		324A62561BC1716D00F3A050 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A62551BC1716C00F3A050 /* libglfw.3.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		324A62431BC1703200F3A050 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		324A62451BC1703200F3A050 /* GPX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GPX; sourceTree = BUILT_PRODUCTS_DIR; };
+		324A62481BC1703200F3A050 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		324A624F1BC1705400F3A050 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.11.0.dylib; path = ../../../../../usr/local/Cellar/glew/1.11.0/lib/libGLEW.1.11.0.dylib; sourceTree = "<group>"; };
+		324A62531BC1713400F3A050 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/local/lib; sourceTree = "<group>"; };
+		324A62551BC1716C00F3A050 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../usr/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324A62421BC1703200F3A050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324A62561BC1716D00F3A050 /* libglfw.3.1.dylib in Frameworks */,
+				324A62521BC1707700F3A050 /* libGLEW.1.11.0.dylib in Frameworks */,
+				324A62501BC1705400F3A050 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324A623C1BC1703200F3A050 = {
+			isa = PBXGroup;
+			children = (
+				324A62551BC1716C00F3A050 /* libglfw.3.1.dylib */,
+				324A62531BC1713400F3A050 /* lib */,
+				324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */,
+				324A624F1BC1705400F3A050 /* OpenGL.framework */,
+				324A62471BC1703200F3A050 /* GPX */,
+				324A62461BC1703200F3A050 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		324A62461BC1703200F3A050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324A62451BC1703200F3A050 /* GPX */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324A62471BC1703200F3A050 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				324A62481BC1703200F3A050 /* main.cpp */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324A62441BC1703200F3A050 /* GPX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324A624C1BC1703200F3A050 /* Build configuration list for PBXNativeTarget "GPX" */;
+			buildPhases = (
+				324A62411BC1703200F3A050 /* Sources */,
+				324A62421BC1703200F3A050 /* Frameworks */,
+				324A62431BC1703200F3A050 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPX;
+			productName = GPX;
+			productReference = 324A62451BC1703200F3A050 /* GPX */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324A623D1BC1703200F3A050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "George Coomber";
+				TargetAttributes = {
+					324A62441BC1703200F3A050 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 324A62401BC1703200F3A050 /* Build configuration list for PBXProject "GPX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 324A623C1BC1703200F3A050;
+			productRefGroup = 324A62461BC1703200F3A050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324A62441BC1703200F3A050 /* GPX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324A62411BC1703200F3A050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324A62491BC1703200F3A050 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		324A624A1BC1703200F3A050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		324A624B1BC1703200F3A050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		324A624D1BC1703200F3A050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.11.0/lib,
+					/opt/local/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLEW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		324A624E1BC1703200F3A050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.11.0/lib,
+					/opt/local/lib,
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLEW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324A62401BC1703200F3A050 /* Build configuration list for PBXProject "GPX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324A624A1BC1703200F3A050 /* Debug */,
+				324A624B1BC1703200F3A050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324A624C1BC1703200F3A050 /* Build configuration list for PBXNativeTarget "GPX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324A624D1BC1703200F3A050 /* Debug */,
+				324A624E1BC1703200F3A050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 324A623D1BC1703200F3A050 /* Project object */;
+}
