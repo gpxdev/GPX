@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320540551BCAF06700562461 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 320540541BCAF06700562461 /* Log.cpp */; settings = {ASSET_TAGS = (); }; };
 		324A62491BC1703200F3A050 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324A62481BC1703200F3A050 /* main.cpp */; };
 		324A62501BC1705400F3A050 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A624F1BC1705400F3A050 /* OpenGL.framework */; };
 		324A62521BC1707700F3A050 /* libGLEW.1.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */; };
@@ -26,12 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		320540531BCAEDB700562461 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Log.h; path = Log/Log.h; sourceTree = "<group>"; };
+		320540541BCAF06700562461 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = Log/Log.cpp; sourceTree = "<group>"; };
 		324A62451BC1703200F3A050 /* GPX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GPX; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A62481BC1703200F3A050 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		324A624F1BC1705400F3A050 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.11.0.dylib; path = ../../../../../usr/local/Cellar/glew/1.11.0/lib/libGLEW.1.11.0.dylib; sourceTree = "<group>"; };
 		324A62531BC1713400F3A050 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/local/lib; sourceTree = "<group>"; };
 		324A62551BC1716C00F3A050 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../usr/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		3278D83C1C6EECE500696D16 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				324A62481BC1703200F3A050 /* main.cpp */,
+				3278D83C1C6EECE500696D16 /* Config.h */,
+				320540531BCAEDB700562461 /* Log.h */,
+				320540541BCAF06700562461 /* Log.cpp */,
 			);
 			path = GPX;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320540551BCAF06700562461 /* Log.cpp in Sources */,
 				324A62491BC1703200F3A050 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +230,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/local/include,
 					/usr/local/include,
+					"/Users/gcoomber/Development/Projects/GPX/GPX/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,6 +249,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/local/include,
 					/usr/local/include,
+					"/Users/gcoomber/Development/Projects/GPX/GPX/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

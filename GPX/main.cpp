@@ -14,7 +14,12 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
-void render(void)
+#include <Config.h>
+#include <Log/Log.h>
+
+using namespace gp;
+
+void render()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -31,13 +36,22 @@ void render(void)
 	glEnd();
 }
 
+void initialize()
+{
+}
+
 int main(int argc, const char * argv[])
 {
 	GLFWwindow* win;
 	if (!glfwInit())
 		return -1;
 	
-	win = glfwCreateWindow(640, 480, "Open GL Base Proj", nullptr, nullptr);
+	Log log;
+	
+	Log::write("test");
+	Log::write("line 2");
+	
+	win = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Open GL Base Proj", nullptr, nullptr);
 	if (!win)
 	{
 		glfwTerminate();
