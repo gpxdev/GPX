@@ -1,22 +1,14 @@
-//
-//  Log.cpp
-//  GPX
-//
-//  Created by George Coomber on 2015-10-11.
-//  Copyright © 2015 George Coomber. All rights reserved.
-//
-
 #include "Log.h"
 
 #include <ctime>
 #include <fstream>
 
-namespace gp
+namespace std
 {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-std::ofstream* Log::s_logFile = nullptr;
+ofstream* Log::s_logFile = nullptr;
 	
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -36,11 +28,29 @@ Log::~Log()
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-void Log::write(const char* logMessage)
+Log& Log::getInstance()
+{
+	static Log instance;
+	return instance;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+void Log::writeWarning(const char* logMessage)
 {
 	if (s_logFile != nullptr)
 	{
-		*s_logFile << getFormattedTime() << " - " << logMessage << std::endl;
+		*s_logFile << getFormattedTime() << " - " << "Warning: " << logMessage << std::endl;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+void Log::writeError(const char* logMessage)
+{
+	if (s_logFile != nullptr)
+	{
+		*s_logFile << getFormattedTime() << " - " << "Error: "  << logMessage << std::endl;
 	}
 }
 
@@ -48,13 +58,13 @@ void Log::write(const char* logMessage)
 
 const char* Log::getFormattedTime()
 {
-	std::time_t result;
-	std::time(&result);
-	std::string timeString = std::ctime(&result);
+	time_t result;
+	time(&result);
+	string timeString = ctime(&result);
 	if (!timeString.empty())
 		timeString = timeString.substr(0, timeString.length() - 1);
 	
 	return timeString.c_str();
 }
 
-} // namespace gp
+} // namespace std

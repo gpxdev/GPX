@@ -35,6 +35,8 @@
 		324A62511BC1707700F3A050 /* libGLEW.1.11.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.11.0.dylib; path = ../../../../../usr/local/Cellar/glew/1.11.0/lib/libGLEW.1.11.0.dylib; sourceTree = "<group>"; };
 		324A62531BC1713400F3A050 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/local/lib; sourceTree = "<group>"; };
 		324A62551BC1716C00F3A050 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../usr/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		32533ED71C828578004DB0B7 /* VertexShaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VertexShaders.h; path = Shaders/VertexShaders.h; sourceTree = "<group>"; };
+		32533EDA1C828A6E004DB0B7 /* FragmentShaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FragmentShaders.h; path = Shaders/FragmentShaders.h; sourceTree = "<group>"; };
 		3278D83C1C6EECE500696D16 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				324A62481BC1703200F3A050 /* main.cpp */,
+				32533ED71C828578004DB0B7 /* VertexShaders.h */,
+				32533EDA1C828A6E004DB0B7 /* FragmentShaders.h */,
 				3278D83C1C6EECE500696D16 /* Config.h */,
 				320540531BCAEDB700562461 /* Log.h */,
 				320540541BCAF06700562461 /* Log.cpp */,

@@ -1,31 +1,32 @@
-//
-//  Log.h
-//  GPX
-//
-//  Created by George Coomber on 2015-10-11.
-//  Copyright © 2015 George Coomber. All rights reserved.
-//
-
 #pragma once
 
 #include <iostream>
 #include <string>
 
-namespace gp
+namespace std
 {
 
 class Log
 {
-public:
-	Log();
-	~Log();
+	public:
+		// Do not allow copying
+		Log(Log& rhs) = delete;
+		Log& operator=(const Log& rhs) = delete;
 	
-	static void write(const char* logMessage);
-	static const char* getFormattedTime();
+		static Log& getInstance();
 	
-private:
-	static std::ofstream* s_logFile;
+		void writeError(const char* logMessage);
+		void writeWarning(const char* logMessage);
+	
+	private:
+		Log();
+		~Log();
+	
+		const char* getFormattedTime();
+	
+	private:
+		static ofstream* s_logFile;
 };
 	
-}
+} // namespace std
 
